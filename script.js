@@ -4,8 +4,7 @@ const occupations = ["Writer", "Teacher", "Programmer", "Doctor", "Artist", "Adm
 const freelancers = [
     {name: "Alice", price: 30, occupation: "Writer" },
     {name: "Bob", price: 50, occupation: "Teacher" },
-    {name: "Carol", price: 70, occupation: "Programmer"},
-];
+    {name: "Carol", price: 70, occupation: "Programmer"},]
 
 function renderFreelancers(freelancers) {
     const container = document.querySelector("#freelancer-container");
@@ -40,8 +39,7 @@ setInterval(() => {
     const newFreelancer = generateRandomFreelancer();
     freelancers.push(newFreelancer);
     renderFreelancers(freelancers);
-    updateAveragePrice(freelancers);
-}, 3000)
+    updateAveragePrice(freelancers)}, 3000)
 
 function calculateAveragePrice(freelancers) {
     const total = freelancers.reduce((sum, freelancer) => sum + freelancer.price, 0);
